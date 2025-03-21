@@ -23,7 +23,8 @@
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-hook-form": "^7.54.2",
-    "ui": "workspace:*"
+    "ui": "workspace:*",
+    "zephyr-rspack-plugin": "^0.0.36"
   },
   "devDependencies": {
     "@biomejs/biome": "^1.9.4",

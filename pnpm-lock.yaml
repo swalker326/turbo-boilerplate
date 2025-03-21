@@ -47,6 +47,9 @@ importers:
       ui:
         specifier: workspace:*
         version: link:../../packages/ui
+      zephyr-rspack-plugin:
+        specifier: ^0.0.36
+        version: 0.0.36(@swc/helpers@0.5.15)(webpack@5.98.0)
     devDependencies:
       '@biomejs/biome':
         specifier: ^1.9.4
@@ -4511,6 +4514,11 @@ snapshots:
       find-package-json: 1.2.0
       webpack: 5.98.0(esbuild@0.17.19)
 
+  '@module-federation/automatic-vendor-federation@1.2.1(webpack@5.98.0)':
+    dependencies:
+      find-package-json: 1.2.0
+      webpack: 5.98.0
+
   '@module-federation/bridge-react-webpack-plugin@0.11.1':
     dependencies:
       '@module-federation/sdk': 0.11.1
@@ -7706,9 +7714,42 @@ snapshots:
       - utf-8-validate
       - webpack
 
+  zephyr-rspack-plugin@0.0.36(@swc/helpers@0.5.15)(webpack@5.98.0):
+    dependencies:
+      '@module-federation/automatic-vendor-federation': 1.2.1(webpack@5.98.0)
+      '@rspack/core': 1.2.8(@swc/helpers@0.5.15)
+      is-ci: 3.0.1
+      tslib: 2.8.1
+      zephyr-agent: 0.0.36
+      zephyr-xpack-internal: 0.0.36(webpack@5.98.0)
+    transitivePeerDependencies:
+      - '@cloudflare/workers-types'
+      - '@rspack/tracing'
+      - '@swc/helpers'
+      - bufferutil
+      - encoding
+      - supports-color
+      - utf-8-validate
+      - webpack
+
   zephyr-xpack-internal@0.0.36(webpack@5.98.0(esbuild@0.17.19)):
     dependencies:
       '@module-federation/automatic-vendor-federation': 1.2.1(webpack@5.98.0(esbuild@0.17.19))
+      is-ci: 3.0.1
+      tslib: 2.8.1
+      zephyr-agent: 0.0.36
+      zephyr-edge-contract: 0.0.36
+    transitivePeerDependencies:
+      - '@cloudflare/workers-types'
+      - bufferutil
+      - encoding
+      - supports-color
+      - utf-8-validate
+      - webpack
+
+  zephyr-xpack-internal@0.0.36(webpack@5.98.0):
+    dependencies:
+      '@module-federation/automatic-vendor-federation': 1.2.1(webpack@5.98.0)
       is-ci: 3.0.1
       tslib: 2.8.1
       zephyr-agent: 0.0.36
