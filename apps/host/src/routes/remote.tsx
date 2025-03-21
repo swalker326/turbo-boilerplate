@@ -1,7 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { lazy } from "react";
-//@ts-expect-error - no types yet
-const Remote = lazy(() => import("remote/Route"));
+import RemoteRoute from "remote/Route";
 
 export const Route = createFileRoute("/remote")({
   component: RouteComponent
@@ -10,7 +8,7 @@ export const Route = createFileRoute("/remote")({
 function RouteComponent() {
   return (
     <div className="h-full">
-      <Remote />
+      <RemoteRoute />
     </div>
   );
 }

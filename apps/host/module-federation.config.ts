@@ -1,9 +1,9 @@
-import type { ModuleFederationConfig } from "@rsbuild/core";
+import type { ModuleFederationOptions } from "@module-federation/rsbuild-plugin";
 
-export const mfConfig: ModuleFederationConfig["options"] = {
+export const mfConfig: ModuleFederationOptions = {
   name: "host",
   remotes: {
     remote: "remote@http://localhost:3002/remoteEntry.js"
   },
-
+  dts: true,
 };
