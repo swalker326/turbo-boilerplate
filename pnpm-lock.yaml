@@ -93,6 +93,9 @@ importers:
       react-dom:
         specifier: ^19.0.0
         version: 19.0.0(react@19.0.0)
+      ui:
+        specifier: workspace:*
+        version: link:../../packages/ui
     devDependencies:
       '@biomejs/biome':
         specifier: ^1.9.4
@@ -173,12 +176,6 @@ importers:
       '@biomejs/biome':
         specifier: ^1.9.4
         version: 1.9.4
-      '@module-federation/enhanced':
-        specifier: ^0.11.1
-        version: 0.11.1(@rspack/core@1.2.8(@swc/helpers@0.5.15))(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(typescript@5.8.2)(webpack@5.98.0)
-      '@module-federation/rsbuild-plugin':
-        specifier: ^0.11.1
-        version: 0.11.1(@rsbuild/core@1.2.19)(@rspack/core@1.2.8(@swc/helpers@0.5.15))(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(typescript@5.8.2)(webpack@5.98.0)
       '@rslib/core':
         specifier: ^0.5.5
         version: 0.5.5(typescript@5.8.2)
