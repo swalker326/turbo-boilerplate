@@ -1,0 +1,20 @@
+{
+  "name": "boiler-plate",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "turbo dev",
+    "check": "turbo check",
+    "build": "turbo build",
+    "typecheck": "turbo typecheck"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@10.5.2",
+  "dependencies": {
+    "turbo": "^2.4.4",
+    "@biomejs/biome": "^1.9.4"
+  }
+}
